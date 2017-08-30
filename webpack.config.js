@@ -17,4 +17,14 @@ module.exports = {
       $: 'jquery'
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: "babel-loader",
+        },
+      },
+    ],
+  },
 };
